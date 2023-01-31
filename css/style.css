@@ -4,7 +4,7 @@
 
  
 html, body {
-	margin: 0%;
+	margin: 0;
 	box-sizing: border-box;
 	overflow-x: hidden;
 }
@@ -27,7 +27,7 @@ html, body {
 
 /**** Theme font-family  ****/
 
---Abel:'Abel', cursive;  /* Pravljenje varijable u css(--ime variajble)*/
+--Abel:'Abel', cursive;
 --Anton:'Anton', cursive;
 --Josefin_Sans:'Josefin_Sans', cursive;
 --Lexend_deca:'Lexend_deca', cursive;
@@ -103,7 +103,7 @@ p {
 
 	background: white;
 	padding: 0 2rem;
-	height: 0rem;
+	height: 0;
 	min-height: 8vh; 
 	overflow: hidden;
 	transition: height 1s ease-in-out;
@@ -116,7 +116,7 @@ p {
 
 .nav .toggle-collapse {
 	position: absolute;
-	top: 0%;
+	top: 0;
 	width: 90%;
 	cursor: pointer;
 	display: none;
@@ -144,7 +144,7 @@ p {
 
 .nav .nav-items .nav-link {
 	padding: 1.6rem 1rem;
-	font-size: 1.1rem 0;
+	/*font-size: 1.1rem 0;*/
 	position: relative;
 	font-family: var(--Abel);
 	font-size: 1.1rem;
@@ -159,10 +159,9 @@ p {
 }
 
 .nav .nav-brand a {
-	font-size: 1.6rem;
 	padding: 1rem 0;
 	display: block;
-	font-family: var(--Lexend_deca); /*Pozivanje varijable(upise se var pa ime u zagradi)*/
+	font-family: var(--Lexend_deca);
 	font-size: 1.6rem;
 
 }
@@ -260,7 +259,7 @@ main .blog-content span {
 
 section .container .owl-nav {
 	position: absolute;
-	top: 0%;
+	top: 0;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -272,7 +271,7 @@ section .container .owl-nav {
 	font-size: 2rem;
 }
 
-.owl-theme .owl-nav [class*='owl']:hover {  /*[class*='owl'] to znaci da bira svaku klasu koja ima owl u imenu klase*/
+.owl-theme .owl-nav [class*='owl']:hover {
 	background: transparent;
 	color: var(--midnight);
 
@@ -307,7 +306,7 @@ main .site-content .post-content > .post-image .post-info {
 	background: var(--sky);
 	padding: 1rem;
 	position: absolute;
-	bottom: 0%;
+	bottom: 0;
 	left: 20vw;
 	border-radius: 3rem;
 }
@@ -397,9 +396,9 @@ main .post-content .post-title a {
 
 .site-content .sidebar .popular-post .post-info {
 	padding: .4rem .1rem !important;
-	bottom: 0rem !important;
+	bottom: 0!important;
 	left: 1.5rem !important;
-	border-radius: 0rem !important;
+	border-radius: 0!important;
 	background: var(--white) !important;
 }
 
@@ -425,7 +424,7 @@ main .post-content .post-title a {
 
 .site-content .sidebar .newsletter .form-btn {
 	border-radius: 0;
-	padding: .8rem 32%;  /*stavili smo 32% za levo i desno da bi bilo responsiv*/
+	padding: .8rem 32%;
 	margin: 1rem 0;
 	background: var(--sky);
 }
@@ -553,7 +552,7 @@ footer.footer .move-up span :hover {
 	.site-content .post-content > .post-image .post-info {
 		left: 2rem !important;
 		bottom: 1.2rem !important;
-		border-radius: 0% !important;
+		border-radius: 0!important;
 	}
 
 	.site-content .sidebar .popular-post .post-info {
